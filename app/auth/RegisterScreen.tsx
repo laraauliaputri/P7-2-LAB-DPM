@@ -28,7 +28,7 @@ export default function RegisterScreen() {
 		<View style={styles.container}>
 			<View style={styles.header}> {/* Added a centered header view */}
 				<Image
-					source={require("../../assets/images/favicon1.png")}
+					source={require("../../assets/images/bunga.jpg")}
 					style={styles.image}
 				/>
 				<Text style={styles.title}>Create an Account</Text>
@@ -75,76 +75,74 @@ export default function RegisterScreen() {
 }
 
 const styles = StyleSheet.create({
-	container: {
-		flex: 1,
-		backgroundColor: "#78B3CE",
-		padding: 16,
-	},
-	header: {
-		alignItems: "center",
-		justifyContent: "center",
-		marginBottom: 32,
-		paddingTop: 50,
-	},
-	image: {
-		width: 120,
-		height: 120,
-		marginBottom: 16,
-	},
-	title: {
-		fontSize: 28,
-		fontWeight: "bold",
-		color: "#1A1A19",
-	},
-	subtitle: {
-		fontSize: 16,
-		color: "#64748B",
-	},
-	input: {
-		width: "100%",
-		height: 50,
-		borderColor: "#DFF2EB",
-		borderWidth: 1,
-		borderRadius: 8,
-		paddingHorizontal: 16,
-		marginBottom: 16,
-		backgroundColor: "#DFF2EB",
-		fontSize: 16,
-		color: "#black",
-	},
-	registerButton: {
-		width: "100%",
-		height: 50,
-		backgroundColor: "#37AFE1",
-		borderRadius: 8,
-		justifyContent: "center",
-		alignItems: "center",
-		marginBottom: 16,
-		shadowColor: "#222",
-		shadowOffset: { width: 0, height: 2 },
-		shadowOpacity: 0.1,
-		shadowRadius: 4,
-		color: "#37AFE1",
-	},
-	registerButtonText: {
-		color: "#54473F",
-		fontSize: 18,
-		fontWeight: "bold",
-	},
-	backButton: {
-		width: "100%",
-		height: 50,
-		borderColor: "#37AFE1",
-		backgroundColor: "#37AFE1",
-		borderWidth: 1,
-		borderRadius: 8,
-		justifyContent: "center",
-		alignItems: "center",
-		color: "#37AFE1",
-	},
-	backButtonText: {
-		color: "#54473F",
-		fontSize: 16,
-		fontWeight: "bold",
-	},
+    container: {
+        flex: 1,
+        justifyContent: "center",
+        alignItems: "center",
+        padding: 16,
+        backgroundColor: "#f8e6f4", // Soft pink background
+    },
+    image: {
+        width: 150,
+        height: 150,
+        marginBottom: 24,
+        resizeMode: "contain",
+		alignSelf: 'center',
+    },
+    title: {
+        fontSize: 28,
+        fontWeight: "bold",
+        marginBottom: 8,
+        color: "#7d4e57", // Muted plum for the title
+        textAlign: "center",
+    },
+    subtitle: {
+        fontSize: 16,
+        marginBottom: 24,
+        color: "#a5739b", // Soft lavender for the subtitle
+        textAlign: "center",
+    },
+    input: {
+        width: "100%",
+        height: 48,
+        borderColor: "#d4a5c9", // Light lavender border
+        borderWidth: 1,
+        borderRadius: 8,
+        paddingHorizontal: 12,
+        marginBottom: 16,
+        backgroundColor: "#ffffff", // White background for clarity
+        fontSize: 16,
+        color: "#7d4e57", // Muted plum for input text
+    },
+    registerButton: {
+        width: "100%",
+        height: 48,
+        borderWidth: 1,
+        borderColor: "#d4a5c9", // Lavender border
+        borderRadius: 8,
+        justifyContent: "center",
+        alignItems: "center",
+        backgroundColor: "#fbe4f5", // Light pink button
+        marginBottom: 16,
+    },
+    registerButtonText: {
+        color: "#7d4e57", // Muted plum for text
+        fontSize: 16,
+        fontWeight: "600",
+    },
+    loginButton: {
+        width: "100%",
+        height: 48,
+        borderWidth: 1,
+        borderColor: "#d4a5c9", // Lavender border
+        borderRadius: 8,
+        justifyContent: "center",
+        alignItems: "center",
+        backgroundColor: "#fbe4f5", // Light pink button
+    },
+    loginButtonText: {
+        color: "#7d4e57", // Muted plum for text
+        fontSize: 16,
+        fontWeight: "600",
+    },
 });

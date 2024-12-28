@@ -29,7 +29,7 @@ export default function LoginScreen() {
 	return (
 		<ThemedView style={styles.container}>
 			<Image
-				source={require("../../assets/images/favicon1.png")}
+				source={require("../../assets/images/bunga.jpg")}
 				style={styles.logo}
 			/>
 			<Text style={styles.title}>Welcome Back!</Text>
@@ -70,7 +70,7 @@ const styles = StyleSheet.create({
         justifyContent: "center",
         alignItems: "center",
         padding: 16,
-        backgroundColor: "#6a11cb", 
+        backgroundColor: "#f8e6f4", // Soft pink background
     },
     logo: {
         width: 150,
@@ -82,40 +82,40 @@ const styles = StyleSheet.create({
         fontSize: 28,
         fontWeight: "bold",
         marginBottom: 8,
-        color: "#ffffff",
+        color: "#7d4e57", // Muted plum for the title
         textAlign: "center",
     },
     subtitle: {
         fontSize: 16,
         marginBottom: 24,
-        color: "#e0e0e0",
+        color: "#a5739b", // Soft lavender for the subtitle
         textAlign: "center",
     },
     input: {
         width: "100%",
         height: 48,
-        borderColor: "#ffffff",
+        borderColor: "#d4a5c9", // Light lavender border
         borderWidth: 1,
         borderRadius: 8,
         paddingHorizontal: 12,
         marginBottom: 16,
-        backgroundColor: "#ffffff30", 
+        backgroundColor: "#ffffff", // White background for clarity
         fontSize: 16,
-        color: "#ffffff",
+        color: "#7d4e57", // Muted plum for input text
     },
     registerButton: {
         width: "100%",
         height: 48,
         borderWidth: 1,
-        borderColor: "#ffffff",
+        borderColor: "#d4a5c9", // Lavender border
         borderRadius: 8,
         justifyContent: "center",
         alignItems: "center",
-        backgroundColor: "#ffffff30",
+        backgroundColor: "#fbe4f5", // Light pink button
         marginBottom: 16,
     },
     registerButtonText: {
-        color: "#ffffff",
+        color: "#7d4e57", // Muted plum for text
         fontSize: 16,
         fontWeight: "600",
     },
@@ -123,14 +123,14 @@ const styles = StyleSheet.create({
         width: "100%",
         height: 48,
         borderWidth: 1,
-        borderColor: "#ffffff",
+        borderColor: "#d4a5c9", // Lavender border
         borderRadius: 8,
         justifyContent: "center",
         alignItems: "center",
-        backgroundColor: "#ffffff30",
+        backgroundColor: "#fbe4f5", // Light pink button
     },
     loginButtonText: {
-        color: "#ffffff",
+        color: "#7d4e57", // Muted plum for text
         fontSize: 16,
         fontWeight: "600",
     },

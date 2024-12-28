@@ -7,17 +7,18 @@ import { Button, Card, Divider } from 'react-native-paper';
 const ExploreScreen = () => {
     const [searchText, setSearchText] = useState('');
     const [data, setData] = useState([
-        { id: '1', title: 'Eiffel Tower, Paris', description: 'Discover the iconic Eiffel Tower, one of the world\'s most recognized landmarks, with breathtaking views of Paris.' },
-        { id: '2', title: 'Great Barrier Reef, Australia', description: 'Explore the world’s largest coral reef system, full of vibrant marine life and crystal-clear waters.' },
-        { id: '3', title: 'Machu Picchu, Peru', description: 'Experience the ancient Incan city of Machu Picchu, a UNESCO World Heritage site with rich history and breathtaking views.' },
-        { id: '4', title: 'Santorini, Greece', description: 'Known for its white-washed buildings, blue-domed churches, and stunning sunsets over the Aegean Sea.' },
-        { id: '5', title: 'Tokyo, Japan', description: 'Immerse yourself in the bustling metropolis of Tokyo, where tradition and technology meet in vibrant harmony.' },
-        { id: '6', title: 'Grand Canyon, USA', description: 'Explore the Grand Canyon’s natural beauty, offering spectacular views and adventurous activities in the heart of nature.' },
-        { id: '7', title: 'Kyoto, Japan', description: 'Visit Kyoto for its tranquil temples, stunning gardens, and traditional tea houses, especially during cherry blossom season.' },
-        { id: '8', title: 'Victoria Falls, Zimbabwe/Zambia', description: 'Witness the grandeur of Victoria Falls, one of the world’s largest and most spectacular waterfalls.' },
-        { id: '9', title: 'Bora Bora, French Polynesia', description: 'Relax in paradise with overwater bungalows, clear turquoise waters, and a peaceful atmosphere perfect for a getaway.' },
-        { id: '10', title: 'Rome, Italy', description: 'Walk through history in the Eternal City, with landmarks like the Colosseum, Roman Forum, and Vatican City.' },
+        { id: '1', title: 'Gunung Rinjani, Indonesia', description: 'Jelajahi keindahan Gunung Rinjani, salah satu gunung berapi tertinggi di Indonesia dengan pemandangan yang menakjubkan.' },
+        { id: '2', title: 'Pulau Komodo, Indonesia', description: 'Temui komodo yang legendaris dan nikmati pemandangan alam yang eksotis di Pulau Komodo.' },
+        { id: '3', title: 'Candi Borobudur, Indonesia', description: 'Kunjungi Candi Borobudur, candi Buddha terbesar di dunia yang penuh dengan nilai sejarah dan budaya.' },
+        { id: '4', title: 'Raja Ampat, Indonesia', description: 'Selami surga bawah laut di Raja Ampat, dengan terumbu karang dan keanekaragaman hayati yang luar biasa.' },
+        { id: '5', title: 'Danau Toba, Indonesia', description: 'Nikmati keindahan Danau Toba, danau vulkanik terbesar di dunia dengan suasana yang tenang.' },
+        { id: '6', title: 'Bali, Indonesia', description: 'Rasakan keindahan pantai, budaya, dan keramahan di Pulau Dewata, Bali.' },
+        { id: '7', title: 'Yogyakarta, Indonesia', description: 'Jelajahi kota budaya Yogyakarta, rumah bagi Keraton dan Candi Prambanan yang megah.' },
+        { id: '8', title: 'Kawah Ijen, Indonesia', description: 'Saksikan fenomena api biru yang langka dan pemandangan kawah belerang di Kawah Ijen.' },
+        { id: '9', title: 'Labuan Bajo, Indonesia', description: 'Gerbang menuju keajaiban alam Pulau Komodo dan tempat matahari terbenam yang menakjubkan.' },
+        { id: '10', title: 'Tana Toraja, Indonesia', description: 'Pelajari tradisi unik dan pemandangan pegunungan yang indah di Tana Toraja.' },
     ]);
+    
     const [filteredData, setFilteredData] = useState(data);
 
     const handleSearch = () => {
@@ -68,7 +69,7 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         padding: 16,
-        backgroundColor: '#f5f5f5',
+        backgroundColor: '#ffe4e6', 
     },
     header: {
         marginBottom: 20,
@@ -77,11 +78,11 @@ const styles = StyleSheet.create({
     welcomeText: {
         fontSize: 24,
         fontWeight: 'bold',
-        color: '#333',
+        color: '#d6336c', 
     },
     subText: {
         fontSize: 16,
-        color: '#black',
+        color: '#9c1c4b', 
         marginTop: 8,
     },
     searchContainer: {
@@ -91,7 +92,7 @@ const styles = StyleSheet.create({
     },
     searchInput: {
         flex: 1,
-        borderColor: '#ddd',
+        borderColor: '#f9bac4', 
         borderWidth: 1,
         borderRadius: 8,
         padding: 10,
@@ -99,21 +100,31 @@ const styles = StyleSheet.create({
         marginRight: 8,
     },
     searchButton: {
-        backgroundColor: '#64b5f6',
+        backgroundColor: '#ff7f9c', 
     },
     card: {
         marginBottom: 16,
-        borderRadius: 8,
-        elevation: 3,
+        borderRadius: 16, 
+        backgroundColor: '#ffffff', 
+        borderColor: '#f9bac4', 
+        borderWidth: 1,
+        padding: 16, 
+        shadowColor: '#000', 
+        shadowOffset: { width: 0, height: 2 }, 
+        shadowOpacity: 0.1, 
+        shadowRadius: 8, 
+        elevation: 5, 
     },
     emptyText: {
         marginTop: 20,
         textAlign: 'center',
         fontSize: 16,
-        color: '#black',
+        color: '#9c1c4b', 
     },
     descriptionText: {
-        color: '#000', // Set description text color to black
+        color: '#6b0d31', 
+        fontSize: 14, 
+        marginTop: 8, 
     },
 });
 

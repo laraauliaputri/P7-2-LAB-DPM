@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { StyleSheet, View, ImageBackground } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import { useRouter } from 'expo-router';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import axios from 'axios';
@@ -58,11 +58,7 @@ const ProfileScreen = () => {
 
     return (
         <PaperProvider>
-            <ImageBackground
-                source={require('@/assets/images/favicon1.png')} 
-                style={styles.container}
-                resizeMode="cover"
-            >
+            <ThemedView style={styles.container}>
                 <ThemedView style={styles.contentContainer}>
                     {profile ? (
                         <View style={styles.profileContainer}>
@@ -98,7 +94,7 @@ const ProfileScreen = () => {
                         </Dialog>
                     </Portal>
                 </ThemedView>
-            </ImageBackground>
+            </ThemedView>
         </PaperProvider>
     );
 };
@@ -111,12 +107,13 @@ const styles = StyleSheet.create({
     },
     container: {
         flex: 1,
-        justifyContent: 'center', 
+        justifyContent: 'center',
+        backgroundColor: '#f8e6f4', 
     },
     contentContainer: {
         flex: 1,
         padding: 20,
-        backgroundColor: 'rgba(255, 255, 255, 0.8)', 
+        backgroundColor: '#f4c6d7', 
         marginHorizontal: 20,
         alignItems: 'center',
         justifyContent: 'center',
@@ -137,20 +134,20 @@ const styles = StyleSheet.create({
     username: {
         fontSize: 26,
         fontWeight: 'bold',
-        color: '#333',
+        color: '#ad1457', 
     },
     email: {
         fontSize: 18,
-        color: '#666',
+        color: '#ad1457', 
         marginTop: 8,
     },
     infoCard: {
         width: '100%',
-        backgroundColor: '#fff',
+        backgroundColor: '#f8e6f4', 
         borderRadius: 10,
         padding: 18,
         marginBottom: 16,
-        shadowColor: '#000',
+        shadowColor: '#ad1457',
         shadowOffset: { width: 0, height: 2 },
         shadowOpacity: 0.1,
         shadowRadius: 4,
@@ -158,17 +155,17 @@ const styles = StyleSheet.create({
     },
     label: {
         fontSize: 14,
-        color: '#888',
+        color: '#333',
         marginBottom: 6,
     },
     value: {
         fontSize: 18,
         fontWeight: '600',
-        color: '#333',
+        color: '#ad1457',
     },
     logoutButton: {
         marginTop: 24,
-        backgroundColor: '#ff5252',
+        backgroundColor: '#f8e6f4', 
         borderRadius: 25,
         paddingVertical: 10,
         paddingHorizontal: 20,

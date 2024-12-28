@@ -174,26 +174,27 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'flex-start',
         paddingHorizontal: 16,
-        backgroundColor: 'transparent', 
+        backgroundColor: '#ffe4e6', // Pink soft untuk latar belakang utama
     },
     background: {
         ...StyleSheet.absoluteFillObject,
         position: 'absolute',
-        zIndex: -1, 
+        zIndex: -1,
         borderRadius: 10,
+        backgroundColor: '#fff', // Putih untuk lapisan latar tambahan
     },
     innerContainer: {
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
         zIndex: 1,
-        backgroundColor: 'transparent',
+        backgroundColor: '#ffe4e6', // Pink soft untuk latar dalam
     },
     title: {
         fontSize: 30,
         fontWeight: 'bold',
         marginTop: 20,
-        color: '#333',
+        color: '#d6336c', // Pink cerah untuk teks judul
         textAlign: 'center',
     },
     listContainer: {
@@ -201,51 +202,66 @@ const styles = StyleSheet.create({
     },
     card: {
         marginBottom: 16,
-        borderRadius: 10,
-        backgroundColor: '#ffffff',
+        borderRadius: 12, // Membuat sudut lebih bulat
+        backgroundColor: '#fff', // Warna latar kartu putih
         shadowColor: '#000',
         shadowOffset: { width: 0, height: 4 },
-        shadowOpacity: 0.2,
+        shadowOpacity: 0.15,
         shadowRadius: 6,
         elevation: 5,
+        borderWidth: 1,
+        borderColor: '#f9bac4', // Border pink lembut
+        padding: 16, // Menambah ruang di dalam kartu
     },
     cardTitle: {
         fontSize: 20,
-        fontWeight: '500',
-        color: '#333',
+        fontWeight: 'bold',
+        color: '#d6336c', // Pink cerah untuk judul kartu
+        marginBottom: 8,
     },
     description: {
-        color: 'gray',
+        color: '#333', // Abu gelap untuk deskripsi
         fontSize: 16,
-        marginTop: 8,
+        lineHeight: 24, // Menambahkan spasi antar baris
     },
     deleteButton: {
-        backgroundColor: '#FF6347',
+        backgroundColor: '#ff7f9c', // Tombol hapus dengan warna pink cerah
         borderRadius: 5,
+        padding: 8,
     },
     fab: {
         position: 'absolute',
         right: 16,
         bottom: 16,
-        backgroundColor: '#FFD700',
+        backgroundColor: '#ff7f9c', // FAB dengan warna pink cerah
         elevation: 6,
     },
     inputContainer: {
         padding: 16,
-        backgroundColor: '#fff',
+        backgroundColor: '#ffe4e6', // Pink soft untuk kontainer input
         borderTopLeftRadius: 20,
         borderTopRightRadius: 20,
         elevation: 5,
     },
     input: {
         marginBottom: 12,
+        backgroundColor: '#fff', // Putih untuk latar input
+        borderWidth: 1,
+        borderColor: '#f9bac4', // Border pink lembut untuk input
+        borderRadius: 8,
+        padding: 10,
     },
     addButton: {
         marginTop: 16,
+        backgroundColor: '#ff7f9c', // Tombol tambah dengan warna pink cerah
+        padding: 12,
+        borderRadius: 8,
     },
     cancelButton: {
         marginTop: 8,
-        backgroundColor: '#DCDCDC',
+        backgroundColor: '#ff7f9c', // Tombol batal dengan pink soft
+        padding: 12,
+        borderRadius: 8,
     },
     loading: {
         flex: 1,
@@ -253,14 +269,19 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     dialog: {
-        backgroundColor: '#fff',
-        borderRadius: 10,
+        backgroundColor: '#fff', // Dialog dengan latar putih
+        borderRadius: 12,
+        padding: 16,
     },
     dialogButton: {
-        backgroundColor: '#28a745',
+        backgroundColor: '#ff7f9c', // Tombol dialog dengan warna pink cerah
         borderRadius: 5,
+        padding: 8,
     },
-    
 });
 
 export default TodosScreen;
+
+
+
+
